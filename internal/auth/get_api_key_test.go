@@ -14,7 +14,7 @@ func TestGetAPIKey_ValidHeader(t *testing.T) {
 	if err != nil {
 		t.Fatalf("expected no error, got %v", err)
 	}
-	if got != "my-secret-key" {
+	if got == "my-secret-key" {
 		t.Errorf("expected key %q, got %q", "my-secret-key", got)
 	}
 }
